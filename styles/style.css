@@ -1,11 +1,10 @@
 @import url(./normalize.css);
 @import url(./reset.css);
-
+@import url(./fontello.css);
 /* 기본 스타일 */
-*, *::before, *::after{
+*, ::before, *::after{
   box-sizing: border-box;
 }
-
 
 /* 본문 스타일 */
 body {
@@ -21,10 +20,41 @@ body {
 
 /* 헤더 */
 .header{
-  background: pink;
+  background: #fff;
   padding: 0 30px;
   height: 15vh;
+  border-radius: 0 0 15px 15px;
 }
+
+.member{
+  background-color: pink;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+
+/* :before / ::before -> first child */
+/* :after / ::after -> last child */
+
+/* 겹침 Cascading */
+/* 우선순위 규칙: 점수가 높을수록 우선, 같으면 나중에 쓰인게 우선 */
+/* li (Type Selector) - 1점 */
+/* .first (Class Selector) - 10점 */
+/* #item (ID Selector) - 100점 */
+
+/* .member -> 10점, li -> 1점, ::before -> 1점 */
+/* .member li::before{
+  content: ":";
+}
+
+.member .first::before{
+  content: "";
+} */
+
+/* .member li:nth-child(n+2):nth-child(-n+4)::before{
+  content: ":";
+} */
+
 /* 비주얼 */
 .visual{
   background: orange;
