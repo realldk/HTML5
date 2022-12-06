@@ -1,11 +1,14 @@
 @import url(./normalize.css);
 @import url(./reset.css);
 
-/* 숨김 콘텐츠 */
+/* 숨김 콘텐츠. w, h에 1px을 주는 이유는 가상 커서가 접근할 수 있게 */
 .a11y-hidden{
-  background-color: yellow;
   position: absolute;
-  top: -9999em;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
 }
 
 /* 기본 스타일 */
