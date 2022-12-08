@@ -29,10 +29,15 @@ a{
 /* 본문 스타일 */
 body {
   /* em, rem 단위를 사용해보기 */
-  font-size: 1.4rem;
   color: #212121;
-  background: #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #efefef 60%, #fff 60%, #fff 100%);
+  font-size: 1.4rem;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  /* background-color: #ccc;
+  background-image: url("./images/bg_flower.png"), linear-gradient(to bottom, #ccc 0%, #eee 35%, #efefef 60%, #fff 60%, #fff 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: 50% 0, 0 0; */
+
+  background: url("./images/bg_flower.png") no-repeat 50% 0, #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #efefef 60%, #fff 60%, #fff 100%) repeat 0 0;
 }
 
 /* 레이아웃 */
@@ -210,7 +215,6 @@ body {
 }
 
 .visual{
-  background: pink;
   height: 120px;
   /* overflow: hidden; 을 쓰면 비주얼 영역을 살짝 초과하는 이미지를 넣을 시 잘리게 되기 때문에 쓰지 않는게 좋다. */
   position: relative;
@@ -221,9 +225,9 @@ body {
   animation-name: moveEffect;
   animation-duration: 3000ms;
   animation-fill-mode: forwards;
-  /* display: inline-block; */
-  display: absolute;
-  transition-timing-function: linear;
+  transition-timing-function: ease-in-out;
+  display: inline-block;
+  /* display: absolute; */
 }
 
 /* 메인 */
