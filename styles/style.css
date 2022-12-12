@@ -394,11 +394,60 @@ body {
   /* cursor: pointer; */
 }
 
-
 .validation-list a:hover, .validation-list a:focus {
   color: #f00;
 }
 
+/* 웹 관련 용어 */
+.term {
+  margin-top: 20px;
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  padding: 15px;
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+.term-title {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.term-list div {
+  margin-top: 10px;
+  display: flow-root;
+}
+
+.term-list-subject {
+  color : #296897;
+  font-weight: 500;
+}
+
+.term-list-thumbnail {
+  float: left;
+}
+
+.term-list-thumbnail img {
+  vertical-align: middle;
+}
+
+.term-list-brief {
+  margin-top: 5px;
+  line-height: 1.5;
+}
+
+.term-list-subject, .term-list-brief {
+  float: right;
+  width: 145px;
+}
+
+.cross .term-list-thumbnail {
+  float: right;
+}
+
+.cross .term-list-subject, .cross .term-list-brief {
+  float: left;
+}
 /* 슬로건 */
 .slogan{
   background: skyblue;
