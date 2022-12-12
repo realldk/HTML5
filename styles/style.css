@@ -470,8 +470,9 @@ body {
 }
 
 .form-group-label {
-  white-space: nowrap;
+  /* white-space: nowrap; */
   margin-right: 10px;
+  flex-shrink: 0;
 }
 
 .form-group-input {
@@ -479,7 +480,8 @@ body {
   height: 24px;
   border: 1px solid #aaa;
   flex-grow: 1;
-  width: 100%
+  width: 100%;
+  font-size: 1.2rem;
 }
 
 .form-group-input, .search-button {
