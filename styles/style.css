@@ -402,7 +402,6 @@ body {
   margin-top: 20px;
   background: #ccc linear-gradient(to bottom, #ccc, #eee);
   padding: 15px;
-  position: relative;
   border-radius: 5px;
   border: 1px solid #aaa;
 }
@@ -495,6 +494,70 @@ body {
   border: 0;
   padding: 0 10px;
   font-size: 1.2rem;
+}
+
+/* 공지사항 및 자료실 */
+.board {
+  margin-top: 20px;
+  position: relative;
+}
+
+.board-list li{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.board-list time {
+  white-space: nowrap;
+  margin-left: 5px;
+}
+
+.tab-list {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.tab {
+  background-color: #ccc;
+  color: gray;
+  border: 1px solid #aaa;
+  border-radius: 5px 5px 0 0;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+}
+
+.tab.is-select {
+  background-color: white;
+  color: #e85e2c;
+  border-color: currentColor currentColor #fff currentColor;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.is-select.tab-panel {
+  display: block;
+}
+
+.icon-stop {
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.icon-plus::before {
+  color: hsla(110, 50%, 30%, 1);
+}
+
+.board-more {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
 }
 
 /* 슬로건 */
