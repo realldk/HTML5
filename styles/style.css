@@ -641,7 +641,6 @@ body {
 }
 
 .event-button-wrapper {
-  background-color: yellow;
   overflow: hidden;
   height: 20px;
   display: flex;
@@ -689,12 +688,30 @@ body {
   margin-top: 10px;
   border: 1px solid #aaa;
   border-radius: 5px;
-  transition-property: background-color;
-  transition-duration: 2000ms;
+  height: 27px;
+  overflow: hidden;
+  padding: 2px 20px;
+  transition: height 400ms 0ms, padding 400ms 400ms;
+}
+
+.related-list li {
+  line-height: 1.6;
+  display: flex;
+}
+
+.related-list a {
+  flex-grow: 1;
 }
 
 .related-list:hover, .related-list:focus {
-  background-color: #ff0;
+  /* background-color: #ff0; */
+  height: 147px;
+  padding: 15px 20px;
+}
+
+.event-title, .related-title {
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 /* 슬로건 */
