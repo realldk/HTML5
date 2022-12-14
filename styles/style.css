@@ -562,6 +562,7 @@ body {
 }
 
 /* 새소식 */
+
 .news {
   margin-top: 20px;
   position: relative;
@@ -588,7 +589,7 @@ body {
   margin-top: 35px;
   /* padding-left: 130px; */
   position: relative;
-  display: flow-root;
+  /* display: flow-root; */
 }
 
 .news-item-title {
