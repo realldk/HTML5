@@ -722,23 +722,13 @@ body {
 }
 
 .favorite-list {
-  background-color: yellow;
   list-style: none;
 }
 
 .favorite-list li {
   margin-top: 10px;
   counter-increment: number;
-  background-color: pink;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  /* justify-content: space-between; */
-}
-
-.favorite-list a {
-  background-color: aqua;
-  /* flex-grow: 1; */
+  position: relative;
 }
 
 .favorite-list li::before {
@@ -756,10 +746,13 @@ body {
 }
 
 .up, .down, .stop {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -6px;
   width: 20px;
   height: 11px;
   background-color: pink;
-  margin-left: auto;
   background: url("./images/rank.png") no-repeat;
 }
 
