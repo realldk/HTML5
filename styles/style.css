@@ -128,6 +128,62 @@ body {
   margin-top: 10px;
 }
 
+.related-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.related-list {
+  background-color: #fff;
+  height: 25px;
+  margin-top: 10px;
+  padding: 3px 0 3px 25px;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  transition: height 500ms 0ms, padding 500ms 500ms; 
+}
+
+.related-list:hover, .related-list:focus {
+  height: 125px;
+  padding: 10px 0 3px 25px;
+}
+
+.related-list li {
+  margin-bottom: 5px;
+}
+
+/* 인기 사이트 */
+
+.favorite-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.favorite-list {
+  list-style-type: none;
+  margin-top: 5px;
+}
+
+.favorite-list li::before {
+  content: counter(number);
+  color: #fff;
+  background-color: #aaa;
+  border-radius: 2px;
+  font-size: 1.2rem;
+  margin-right: 4px;
+  display: inline-block;
+  width: 1.3em;
+  text-align: center;
+}
+
+.favorite-list li {
+  counter-increment: number;
+  margin-top: 5px;
+}
+
+.up, .down,
+
 /* 슬로건 */
 .slogan {
   background: skyblue;
